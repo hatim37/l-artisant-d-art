@@ -253,3 +253,126 @@ body {
     font-size: 3.5rem;
   } 
 }
+
+/*
+*
+*
+/* ///////////..second section../////////// 
+*
+*
+*/
+
+.section-2 {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: block;
+    background-color: var(--color-white); 
+  }
+  
+.section-2__image-desktop {
+  display: none;
+}
+
+.section-2__title { 
+  text-align: center;
+  color: var(--color-black);
+  font-size: 1.8rem;
+  padding: 30px 20px 20px; 
+  font-family: 'Dancing Script', cursive;   
+}
+
+.section-2__title strong {
+    color: var(--color-flame); 
+}
+
+.section-2__image-mobile {
+  display: block;
+  width: 80%;
+  max-width: 450px; 
+  height: auto;
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 10px; 
+}
+
+.section-2__container-text {
+  padding: 20px 40px 30px 40px; 
+  color: var(--color-grey);
+  text-align: left;
+  font-size: 1rem; 
+ 
+}
+
+.section-2__container-text li {
+  padding: 30px 0px 0px 0px;
+}
+
+.section-2__container-text p span {
+  color: var(--color-orange);
+}
+
+
+ul { 
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.section-2__container-text-li::before {
+  content: '';
+  background-color: var(--color-orange);
+  display: inline-block;
+  height: 12px;
+  width: 12px; 
+  border-radius: 6px;
+  margin-right: 10px;
+  top: 2px; 
+}
+  
+  /* ......../ media query /.......... */
+  
+@media screen and (min-width: 768px) {
+
+  .section-2 {
+    display: flex;
+    width: 100%;
+  }
+
+  .section-2__container-image, .section-2__container {
+    width: 50%;
+  }
+
+  .section-2__container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-2__image-mobile {
+     display: none;
+   }
+
+  .section-2__image-desktop { 
+    display: block;
+     max-width: 80%;
+     height: auto;
+   }
+
+  .section-2__title { 
+     font-size: 3rem;
+     padding: 100px 20px 100px;   
+   }
+
+  .section-2__container-text {
+     padding: 0px 50px 20px;
+     font-size: 1.1rem;
+   }
+
+  .section-2__container-text li {
+     padding: 30px 0px 20px 0px;
+   }
+
+  ul {
+    margin-bottom: 1.75rem;
+  }
+}
