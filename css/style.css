@@ -1,0 +1,12 @@
+:root {
+    --color-black: #020203;
+    --color-white: #FFFFFF;
+    --color-orange: #E16C2B;
+    --color-grey: #3C3939;
+    --color-flame: #D76127;
+  }
+  
+  body { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
