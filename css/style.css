@@ -11,6 +11,24 @@ body {
     font-size: 1rem;
   }
 
+.background {
+  background-attachment: fixed;
+  background-size: cover;  
+  background-repeat: no-repeat; 
+  background-position: center center ;
+  background-color: var(--color-white); 
+}
+
+/* ......../ media query /.......... */
+
+  @media screen and (min-width:768px) {
+
+  body {
+    font-size: 1.1rem;
+  }
+
+}
+
 
    /* ///////////..header../////////// */
 
@@ -268,6 +286,7 @@ body {
     width: 100%;
     display: block;
     background-color: var(--color-white); 
+    padding-bottom: 100px;
   }
   
 .section-2__image-desktop {
@@ -581,5 +600,61 @@ ul {
     max-height: 100%;
     margin: 0px 50px;  
   }
+
+}
+
+/*
+*
+*
+/* ///////////.fifth section../////////// 
+*
+*
+*/
+
+
+.section-5 { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  background-image: url("../images/index/section5-mobile.jpg");
+  background-attachment:scroll;
+}
+
+
+.section-5__container h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive; 
+}
+
+.section-5__container-link {
+  display: block;
+  text-align: center;
+  margin-top:80px;
+}
+
+.section-5__container-link a { 
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid var(--color-flame);
+  border-radius: 20px;
+  color: var(--color-flame);
+  padding: 10px 20px;
+} 
+
+/* ......../ media query /.......... */
+@media screen and (min-width: 768px) {
+
+  .section-5 {
+    height: 800px;
+    background-image: url("../images/index/section5-desktop.jpg");
+    background-attachment: fixed;
+ }
+ 
+  .section-5__container h2 {
+   font-size: 4rem;
+ }
 
 }
