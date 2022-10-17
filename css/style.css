@@ -709,8 +709,8 @@ ul {
   outline: none;
   background: transparent;
   margin-bottom: 1.2rem;
-
 }
+
 .section-6__container .section-6__box label {
   position: absolute;
   top:0;
@@ -787,6 +787,55 @@ ul {
 @media screen and (min-width: 1200px) {
   .section-6__container .section-6__box input {
       width: 350px;
+  }
+
+}
+
+/*
+*
+*
+/* ///////////.footer section../////////// 
+*
+*
+*/
+
+.footer {
+  background-color: var(--color-black);
+  height: 200px;
+  color: var(--color-white);
+  border: none;
+  border-top: 1px solid var(--color-grey);
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.footer__info {
+  margin: 30px;
+}
+
+.footer__network a, .footer__mention a {
+  margin-left: 10px;
+}
+
+.footer__mention {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.footer__made a{
+  margin-left: 20px;
+}
+
+/* ......../ media query /.......... */
+@media screen and (min-width: 768px) {
+
+  .footer {
+    height: 278px;
+    font-size: 15px;
+  }
+  
+  .footer__info {
+    margin: 40px;
   }
 
 }
