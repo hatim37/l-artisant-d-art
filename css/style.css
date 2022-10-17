@@ -376,3 +376,128 @@ ul {
     margin-bottom: 1.75rem;
   }
 }
+
+
+/*
+*
+*
+/* ///////////.thrid section../////////// 
+*
+*
+*/
+
+.section-3 {
+  display: block;
+  height: auto;
+}
+
+.section-3__title {
+  display: none;
+}
+
+.section-3__title div {
+  display: none; 
+}
+
+.section-3 h2 {
+  width: 100%;
+  text-align: center;
+  color: var(--color-black);
+  font-size: 1.6rem;
+  padding: 50px 0px 10px 0px; 
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  background-color: var(--color-white);
+}
+
+.section-3__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-3__container-text {
+  display: flex;
+  width: 100%;
+  background: var(--color-white);
+  color: var(--color-grey);
+  padding: 10px 50px 50px 50px;
+  text-align: center;
+  order: 2; 
+}
+
+.section-3__container-video {
+
+  height: 600px;
+  display: flex;
+  justify-content: center; 
+  background-color: var(--color-black);
+  z-index: -3;
+  order: 1;
+  color: white;
+}
+
+.section-3__container-video video {
+  width: auto;
+  height: 700px;
+  z-index: -1; 
+}
+
+/* ......../ media query /.......... */
+@media screen and (min-width: 768px) {
+  
+  .section-3 {
+    min-height: 100vh;
+  }
+
+  .section-3__title {
+    display: flex;
+  }
+
+  .section-3__title div {
+    display: block;
+    width: 40%;
+    min-width: 400px;
+  }
+
+  .section-3__title h2 {
+    width: 60%;
+    font-size: 3rem;
+    padding: 200px 10px 10px;
+    font-weight: bold;
+  }
+
+  .section-3__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-3__container-text {
+    width: 60%;
+    padding: 150px 45px 50px 45px;
+    order: 1;
+  }
+
+  .section-3__container-video {
+    display: block;
+    
+    width: 40%;
+    min-width: 400px;
+    background-color:transparent;
+  }
+
+  .section-3__container-video video {
+    width: auto;
+    height: 800px;
+    top: 20px;
+    position: fixed;
+    
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .section-3__container-text {
+      padding: 150px 120px 50px 120px;
+      
+  }
+}
