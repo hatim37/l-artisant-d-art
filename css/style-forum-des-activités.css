@@ -1,0 +1,109 @@
+.actuality {
+    padding-top: 60px;
+    height: auto;
+}
+
+.baniere-desktop, .baniere-desktop-end {
+  display: none;
+}
+
+.actuality__title h1{
+  text-align: center;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-top: 3px solid var(--color-black);
+  border-bottom: 3px solid var(--color-black);
+  max-width: 700px;
+}
+
+.actuality__description {
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.actuality__description span {
+  font-size: 1.4rem;
+}
+
+.actuality__description strong {
+  color: var(--color-flame);
+}
+
+
+.actuality__container-track {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.actuality__container-track p {
+  font-weight: bold;
+  padding: 10px;
+}
+  
+.actuality__track, .actuality__image {
+  display: flex;
+  justify-content: center;
+  max-height: 385px;
+  max-width: 100%;
+}
+  
+.actuality__track-image {
+    max-width: 100%;
+    border: 1px solid var(--color-black);
+}
+
+.actuality__track-florale {
+  display: flex;
+  justify-content: center;
+  max-height: 505px;
+  background-color: var(--color-black);
+}
+
+.actuality__track-description p{
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 40px 10px ;
+}
+  
+.actuality__track-description span{
+  color: var(--color-flame);
+  font-size: 0.5rem;
+}
+  
+    
+    /* ......../ media query /.......... */
+@media screen and (min-width: 768px) {
+  
+    .baniere-mobile, .baniere-mobile-end {
+      display: none;
+    }
+  
+    .baniere-desktop, .baniere-desktop-end {
+      display:block;
+      width: 100%;  
+    }
+  
+    .actuality__image {
+      max-height: 100%;
+    }
+  
+    .actuality__container-track {
+      background-color: var(--color-black);
+      max-width: 767px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .actuality__track-florale p{
+      font-size: 1.4rem;
+    }
+    
+    .actuality__track-florale span{
+      font-size: 1rem;
+    }
+  
+  }
+  
