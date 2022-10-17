@@ -658,3 +658,135 @@ ul {
  }
 
 }
+
+/*
+*
+*
+/* ///////////.sixth section../////////// 
+*
+*
+*/
+
+.section-6__container {
+  height: 450px;
+  background: var(--color-black);
+  text-align: center; 
+}
+
+.section-6__container h2 {
+  padding: 60px 0px 30px 0px;
+  color: var(--color-flame);
+  font-size: 1.6rem;
+}
+
+.section-6__container p {
+  color: var(--color-white);
+  padding-bottom: 50px;
+  font-size: 0.7rem;
+}
+
+.section-6__container-form {
+  display: block;
+}
+
+.section-6__box {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-6__container .section-6__box {
+  position: relative;
+}
+
+.section-6__container .section-6__box input {
+  width: 290px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  margin-bottom: 1.2rem;
+
+}
+.section-6__container .section-6__box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 0.7rem;
+  color: var(--color-white);
+  pointer-events: none;
+  transition: .5s;
+}
+
+.section-6__container .section-6__box input:focus ~ label,
+.section-6__container .section-6__box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: var(--color-flame);
+  font-size: 12px;
+}
+
+.section-6__container button {
+  border-radius: 30px;
+  width: 80px;
+  font-size: 0.9rem;
+  margin-left: 20px;
+  height: 1.8rem;
+  background-color: var(--color-white);
+}
+
+.section-6__container button:hover {
+  background-color: var(--color-flame);
+  color: var(--color-white);
+}
+
+
+/* ......../ media query /.......... */
+@media screen and (min-width: 768px) {
+
+  .section-6__container h2 {
+    padding: 60px 0px 70px 0px;
+    font-size: 2.5rem;
+  }
+
+  .section-6__container p {
+    font-size: 1.1rem;
+  }
+  
+  .section-6__container-form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section-6__box {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+  
+  .section-6__container .section-6__box input {
+    width: 310px;
+  }
+  
+  .section-6__container .section-6__box label {
+    font-size: 16px;
+  }
+  
+  .section-6__container button {
+    width: 130px;
+    font-size: 15px;
+    margin-left: none;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .section-6__container .section-6__box input {
+      width: 350px;
+  }
+
+}
