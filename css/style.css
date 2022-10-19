@@ -71,6 +71,7 @@ body {
   top: 5px;
   right: 35px;
   width: 80px;
+  
  }
 
 .navbar .menu-items {
@@ -232,7 +233,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center; 
-    background-attachment: scroll;     
+    background-attachment: scroll;
+    background-size: cover;     
 }
   
   
