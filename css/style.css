@@ -5,6 +5,8 @@
     --color-grey: #3C3939;
     --color-flame: #D76127;
   }
+
+
   
 body { 
     font-family: 'Roboto', sans-serif;
@@ -165,7 +167,7 @@ body {
    .navbar .menu-items {
     position: static;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
     transform: translateX(0);
     flex-direction: row;
@@ -180,11 +182,16 @@ body {
     order: 2;
   }
 
+  .menu-items li {
+    margin-left: 2rem;
+  }
+
+
   .navbar-container  {
     position: static;
     display: flex;
     height: 64px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
   }
 
